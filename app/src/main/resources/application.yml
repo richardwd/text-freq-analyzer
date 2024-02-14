@@ -1,0 +1,24 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: https://cognito-idp.eu-north-1.amazonaws.com/eu-north-1_njs3sckrJ/.well-known/jwks.json
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+aws:
+  s3:
+    bucket:
+      folderName: epassi
+      bucketName: my-bucket-duowang-01
+
+springdoc:
+  api-docs:
+    enabled: true # enable swagger
+    path: /epassi-txt-freq/v1/api-docs
+  swagger-ui:
+    enabled: true # enable swagger-ui
+    path: /epassi-txt-freq/index.html

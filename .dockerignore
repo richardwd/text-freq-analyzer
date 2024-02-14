@@ -1,0 +1,6 @@
+# 这里定义哪些文件不需要打包进Docker image中
+# 例如：.git .gitignore .idea .vscode
+.dockerignore
+Dockerfile
+README.md
+```
